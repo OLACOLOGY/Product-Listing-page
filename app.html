@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main>
+      <div class="first-sec">
+        <header>Desserts</header>
+        <div class="menu-page">
+          <div class="picks">
+            <picture>
+              <source
+                srcset="/assets/images/image-waffle-mobile.jpg"
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="/assets/images/image-cake-tablet.jpg"
+                media="(max-width: 700px)"
+              />
+              <source
+                srcset="/assets/images/image-brownie-desktop.jpg"
+                media="(max-width: 1500px)"
+              />
+              <img
+                class="food-img"
+                src="/assets/images/image-waffle-mobile.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="action">
+              <div class="add-btn show">
+                <img
+                  src="/assets/images/icon-add-to-cart.svg"
+                  width="17px"
+                  height="17px"
+                  alt=""
+                />Add to Cart
+              </div>
+              <div class="num">
+                <p class="btn minus">&#8722;</p>
+                <div class="value">0</div>
+                <p class="btn plus">&#43;</p>
+              </div>
+            </div>
+            <p>Waffle</p>
+            <h3>Waffle with Berries</h3>
+            <h4>$6.50</h4>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <h2 class="cartAmount">Your Cart (0)</h2>
+        <div class="empty">
+        </div>
+        <div class="full">
+          
+        </div>
+        </div>
+      </div>
+    </main>
+<div class="background"></div>
+    <!-- Selected food items -->
+    <div class="pre-order">
+    </div>
+    <!-- Selected food items -->
+
+    <!-- *****Order confirmed****** -->
+    <div class="receipt">
+      <img src="/assets/images/icon-order-confirmed.svg" alt="confirm-icon" />
+      <h1>Order confirmed</h1>
+      <p>we hope you enjoy your food!</p>
+      <div class="insert"></div>
+      <!-- 
+      <div class="orders">
+        <div class="foodlist">
+          <img src="/assets/images/image-baklava-thumbnail.jpg" alt="" />
+          <div class="info">
+            <h3>Classic Tiramisu</h3>
+            <div class="amount">
+              <h4 style="font-size: 17px">1x</h4>
+              <h5 style="font-size: 17px">@ $5.50</h5>
+            </div>
+          </div>
+          <div style="font-size: 17px" class="price">$5.50</div>
+        </div><hr /> -->
+        <div class="total">
+          <h5>Order Total</h5>
+          <h1 class="check">$46.50</h1>
+        </div>
+        <button onclick="close()" class="new-order">Start New Order</button>
+    </div>
+    <!-- *****Order confirmed****** -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
